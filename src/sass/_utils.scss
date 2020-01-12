@@ -1,0 +1,12 @@
+// Variables
+$font-primary: "Comfortaa", sans-serif;
+$primary-color: #f71c23;
+$text-shadow: 1px 1px 5px rgb(15, 15, 15);
+$section-padding: 150px 0;
+$transition: 0.2s ease;
+
+// Mixins
+@mixin background-image {
+  background-position: center center;
+  background-size: cover;
+}

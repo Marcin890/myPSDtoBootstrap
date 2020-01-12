@@ -1,0 +1,83 @@
+// Section
+section {
+  padding: $section-padding;
+}
+
+// Fonts
+html {
+  font-size: 16px;
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+h1,
+h2 {
+  font-family: $font-primary;
+}
+
+// Headings
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 1.125rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+// Text
+.lead {
+  font-size: 1.75rem;
+  text-shadow: $text-shadow;
+  margin-bottom: 75px;
+}
+
+// Buttons
+.btn {
+  padding: 20px 45px;
+  text-transform: uppercase;
+  box-shadow: $text-shadow;
+  transition: $transition;
+  &:hover {
+    background: black !important;
+    border: none;
+  }
+}
+
+// Inputs
+input {
+  width: 100%;
+  border: 1px solid black;
+  padding: 16px 30px 18px 30px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  text-transform: uppercase;
+}
+
+input[type="submit"] {
+  background: $primary-color;
+  color: white;
+  border: none;
+}
+
+// Footer
+footer {
+  padding: 75px 0px;
+  color: white;
+  background: black;
+}
+
+// Special
+.row-margin {
+  margin-top: 60px;
+}
+
+.box-shadow {
+  box-shadow: $text-shadow;
+}

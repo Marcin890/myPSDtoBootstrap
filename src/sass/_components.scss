@@ -1,0 +1,112 @@
+// NAV
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: black;
+      transition: $transition;
+      border: none;
+      &:hover {
+        color: $primary-color;
+      }
+      &:focus {
+        border: none;
+      }
+    }
+  }
+}
+
+.nav-item {
+  padding: 25px 10px 25px 0px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+// HEADER
+.jumbotron-header {
+  @include media-breakpoint-down(sm) {
+    background-image: url(../../public/images/header-sm.jpg);
+  }
+  @include media-breakpoint-down(m) {
+    background-image: url(../../public/images/header-m.jpg);
+  }
+  background-image: url(../../public/images/header.jpg);
+
+  @include background-image;
+  min-height: 813px;
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.header-intro {
+  margin: $section-padding;
+  z-index: 1;
+}
+
+.header-h1 {
+  font-size: 5rem;
+  text-shadow: $text-shadow;
+  margin-bottom: 40px;
+}
+
+// APOLLO
+.jumbotron-apollo {
+  background: #000 url(../../public/images/stars.png) repeat top center;
+  z-index: 0;
+  @include background-image;
+  padding: 150px 0px;
+
+  img {
+    max-width: 85%;
+  }
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.twinkling {
+  background: transparent url(../../public/images/twinkling.png) repeat top
+    center;
+  z-index: 0;
+  animation: move-twink-back 200s linear infinite;
+}
+
+// Quotation
+.jumbotron-quotation {
+  @include media-breakpoint-down(sm) {
+    background-image: url(../../public/images/gemini_bg-sm.jpg);
+  }
+  @include media-breakpoint-down(m) {
+    background-image: url(../../public/images/gemini_bg-m.jpg);
+  }
+  background-image: url(../../public/images/gemini_bg.jpg);
+  @include background-image;
+  padding: $section-padding;
+}
