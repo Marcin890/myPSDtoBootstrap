@@ -5,9 +5,10 @@ section {
 
 // Fonts
 html {
-  font-size: 16px;
-  @include media-breakpoint-down(sm) {
-    font-size: 14px;
+  font-size: 14px;
+  line-height: 1.68em;
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
   }
 }
 
@@ -19,26 +20,26 @@ h2 {
 // Headings
 
 h1 {
-  margin-bottom: 50px;
-  font-size: 3.5rem;
+  margin-bottom: $space-7;
+  font-size: 2.75rem;
 }
 
 h2 {
   font-size: 1.125rem;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: $space-5;
+  margin-bottom: $space-3;
 }
 
 // Text
 .lead {
   font-size: 1.75rem;
   text-shadow: $text-shadow;
-  margin-bottom: 75px;
+  margin-bottom: $space-8;
 }
 
 // Buttons
 .btn {
-  padding: 20px 45px;
+  padding: $space-4 $space-7;
   text-transform: uppercase;
   box-shadow: $text-shadow;
   transition: $transition;
@@ -51,9 +52,9 @@ h2 {
 // Inputs
 input {
   width: 100%;
-  border: 1px solid black;
-  padding: 16px 30px 18px 30px;
-  border-radius: 5px;
+  border: $border;
+  padding: $space-3 $space-5;
+  border-radius: $border-radius;
 }
 
 input::placeholder {
@@ -62,20 +63,20 @@ input::placeholder {
 
 input[type="submit"] {
   background: $primary-color;
-  color: white;
+  color: $secondary-color;
   border: none;
 }
 
 // Footer
 footer {
-  padding: 75px 0px;
-  color: white;
-  background: black;
+  padding: $space-8 0px;
+  color: $secondary-color;
+  background: $third-color;
 }
 
 // Special
 .row-margin {
-  margin-top: 60px;
+  margin-top: $space-6;
 }
 
 .box-shadow {

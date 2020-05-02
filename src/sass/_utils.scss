@@ -1,12 +1,27 @@
 // Variables
 $font-primary: "Comfortaa", sans-serif;
 $primary-color: #f71c23;
+$secondary-color: white;
+$third-color: black;
 $text-shadow: 1px 1px 5px rgb(15, 15, 15);
-$section-padding: 150px 0;
+$section-padding: 100px 0;
 $transition: 0.2s ease;
+$border: 1px solid black;
 
 // Mixins
 @mixin background-image {
   background-position: center center;
   background-size: cover;
 }
+
+// Space
+$space-1: 5.358px;
+$space-2: 9.259px;
+$space-3: 16px;
+$space-4: 19.2px;
+$space-5: 33.178px;
+$space-7: 39.813px;
+$space-6: 47.776px;
+$space-8: 82.556px;
+$space-9: 99.068px;
+$space-10: 142.658px;

@@ -3,3 +3,4 @@ import $ from "jquery";
 import "./sass/index.scss";
 import "./js/scroll";
 import "./js/copyright";
+import "./js/nasa";

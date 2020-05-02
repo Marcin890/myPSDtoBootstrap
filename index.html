@@ -44,8 +44,11 @@
 
   <body>
     <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="images/logo.png" alt=""
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -58,7 +61,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <a class="nav-link" href="#biography">Biografia</a>
             </li>
@@ -78,11 +81,11 @@
     <!-- END OF NAV -->
     <!-- HEADER -->
     <header>
-      <div class="jumbotron jumbotron-fluid jumbotron-header">
+      <div class="jumbotron jumbotron-fluid jumbotron-header vertical-center">
         <div class="gradient-bg"></div>
         <div class="container">
           <div class="header-intro text-center">
-            <h1 class="header-h1 text-white">Michael Collins</h1>
+            <h1 class="header-title text-white">Michael Collins</h1>
             <p class="lead text-white">pilot modułu dowodzenia Apollo 11</p>
             <a class="btn btn-primary" href="#biography">
               dowiedz się więcej
@@ -95,11 +98,11 @@
 
     <!-- BIOGRAPHY -->
     <section id="biography">
-      <div class="container">
+      <div class="container d-flex">
         <div class="row">
-          <div class="col-md-6">
-            <h1>Biografia</h1>
-            <p class="mb-4">
+          <div class="col-md-6 order-2">
+            <h1 class="biography-title">Biografia</h1>
+            <p class="biography-text">
               Michael Collins urodził się w 1930 roku w Rzymie. Po ukończeniu
               Amerykańskiej Akademii Wojskowej Stanów Zjednoczonych w 1952 roku
               wstąpił do Amerykańskich Sił Powietrznych i został pilotem
@@ -114,7 +117,7 @@
               Collins przeszedł na emeryturę w stopniu generała brygady.
             </p>
           </div>
-          <div class=" col-md-4 offset-md-1">
+          <div class="col-md-4 offset-md-1 order-1 biography-image">
             <img
               src="images/collins.jpg"
               alt=""
@@ -129,9 +132,9 @@
 
     <!-- APOLLO 11 -->
 
-    <div class="jumbotron jumbotron-fluid jumbotron-apollo " id="apollo">
+    <div class="jumbotron jumbotron-fluid jumbotron-apollo" id="apollo">
       <div class="container position-relative">
-        <div class="twinkling"></div>
+        <div class="stars"></div>
         <div class="row">
           <div class="col-md-8 offset-md-2">
             <h1 class="text-white text-center">Apollo 11</h1>
@@ -151,8 +154,10 @@
               class="img-fluid mx-auto d-block rounded-circle box-shadow"
               loading="lazy"
             />
-            <h2 class="text-center text-white">Michael Collins</h2>
-            <p class="text-center text-white mb-4">pilot modułu dowodzenia</p>
+            <h2 class="apollo-crew text-center text-white">Michael Collins</h2>
+            <p class="apollo-function text-center text-white">
+              pilot modułu dowodzenia
+            </p>
           </div>
           <div class="col-md-4">
             <img
@@ -161,8 +166,8 @@
               class="img-fluid mx-auto d-block rounded-circle box-shadow"
               loading="lazy"
             />
-            <h2 class="text-center text-white">Neil Armstrong</h2>
-            <p class="text-center text-white mb-4">dowódca</p>
+            <h2 class="apollo-crew text-center text-white">Neil Armstrong</h2>
+            <p class="apollo-function text-center text-white">dowódca</p>
           </div>
           <div class="col-md-4">
             <img
@@ -171,8 +176,10 @@
               class="img-fluid mx-auto d-block rounded-circle box-shadow"
               loading="lazy"
             />
-            <h2 class="text-center text-white">Buzz Aldrin</h2>
-            <p class="text-center text-white mb-4">pilot modułu księżycowgo</p>
+            <h2 class="apollo-crew text-center text-white">Buzz Aldrin</h2>
+            <p class="apollo-function text-center text-white">
+              pilot modułu księżycowgo
+            </p>
           </div>
         </div>
       </div>
@@ -183,17 +190,17 @@
     <section id="plomien">
       <div class="container">
         <div class="row">
-          <div class="col-md-5 offset-md-1">
+          <div class="col-md-5 offset-md-1 mb-5">
             <img
               src="images/niosac_plomien_cover.png"
               alt=""
-              class="img-fluid mx-auto d-block "
+              class="img-fluid mx-auto d-block"
               loading="lazy"
             />
           </div>
           <div class="col-md-6">
-            <h1>Niosąc płomień</h1>
-            <p>
+            <h1 class="book-title">Niosąc płomień</h1>
+            <p class="book-text">
               Michael Collins, legendarny członek załogi Gemini 10 i Apollo 11,
               snuje opowieść o jednym z największych osiągnięć w historii
               ludzkości, a zarazem jednej z najwspanialszych przygód wszech
@@ -201,7 +208,7 @@
               odłoży książki, zanim nie skończy czytać.
             </p>
 
-            <p>
+            <p class="book-text">
               Jeśli po obejrzeniu dziesiątków filmów czy seriali SF chcesz się
               dowiedzieć, jak naprawdę wygląda szkolenie astronautów, lot w
               kosmos i życie ludzi, którzy z dnia na dzień stali się bohaterami,
@@ -219,7 +226,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
-            <p class="lead text-white">
+            <p class="quotation-text lead text-white">
               [Na temat kosmosu] napisano wiele artykułów prasowych i książek,
               zwłaszcza po misji Apollo 11, a ludzie wciąż nie mają bladego
               pojęcia o tym, jak to jest tam w górze ani jakie czynnościprzed
@@ -237,8 +244,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
-            <h1 class=" text-center">Kontakt</h1>
-            <p class=" text-center">
+            <h1 class="text-center">Kontakt</h1>
+            <p class="text-center">
               Jeśli chcesz uzyskać dodatkowe informacje na temat Michaella
               Collinsa i Apollo 11 zapisz się do naszego newslettera
             </p>
@@ -263,8 +270,6 @@
         </form>
       </div>
     </section>
-
-    <!-- END OF FORM -->
 
     <!-- FOOTER -->
     <footer>
